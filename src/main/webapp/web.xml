@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!-- Define servlet for admin login -->
+    <servlet>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <servlet-class>com.admin.AdminLoginServlet</servlet-class>
+    </servlet>
+
+    <!-- Map the login servlet to a URL -->
+    <servlet-mapping>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <url-pattern>/adminLogin</url-pattern>
+    </servlet-mapping>
+
+    <!-- Define servlet for managing admins -->
+    <servlet>
+        <servlet-name>ManageAdminServlet</servlet-name>
+        <servlet-class>com.admin.ManageAdminServlet</servlet-class>
+    </servlet>
+
+    <!-- Map the manage admin servlet to a URL -->
+    <servlet-mapping>
+        <servlet-name>ManageAdminServlet</servlet-name>
+        <url-pattern>/manageAdmin</url-pattern>
+    </servlet-mapping>
+
+    <!-- Define servlet for updating admin details -->
+    <servlet>
+        <servlet-name>UpdateAdminServlet</servlet-name>
+        <servlet-class>com.admin.UpdateAdminServlet</servlet-class>
+    </servlet>
+
+    <!-- Map the update admin servlet to a URL -->
+    <servlet-mapping>
+        <servlet-name>UpdateAdminServlet</servlet-name>
+        <url-pattern>/UpdateAdminServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Define servlet for adding new admin -->
+    <servlet>
+        <servlet-name>AddAdminServlet</servlet-name>
+        <servlet-class>com.admin.AddAdminServlet</servlet-class>
+    </servlet>
+
+    <!-- Map the add admin servlet to a URL -->
+    <servlet-mapping>
+        <servlet-name>AddAdminServlet</servlet-name>
+        <url-pattern>/AddAdminServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
